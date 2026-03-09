@@ -18,18 +18,24 @@ public class Student {
 	private String mbn;
     private String dob;
     private String email;
+
     private String photo;
 	public Student() {
 		
 	}
-	public Student(long id, String fullName, String dob,String mbn,String email,String photo) {
+	
+	public Student(long id, String fullName, String dob,String mbn,String email) {
+
 		super();
 		this.id = id;
 		this.fullName = fullName;
 		this.dob = dob;
 		this.mbn=mbn;
 		this.email=email;
+
 		this.photo=photo;
+
+
 	}
 	public String getEmail() {
 		return email;
@@ -61,6 +67,7 @@ public class Student {
 	public void setDob(String dob) {
 		this.dob = dob;
 	}
+
 	public String getPhoto() {
 	    return photo;
 	}
@@ -68,6 +75,7 @@ public class Student {
 	public void setPhoto(String photo) {
 	    this.photo = photo;
 	}
+
 	
 
 }
