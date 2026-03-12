@@ -102,11 +102,11 @@
                             <li><a class="dropdown-item" href="AppointmentScheduling">Appointment Scheduling</a></li>
                             <li><a class="dropdown-item" href="contact">Contact</a></li>
                             <li class="dropdown-divider"></li>
-<<<<<<< HEAD
+
                             <li><a class="dropdown-item" href="studentprofiles">StudentProfiles</a></li>
-=======
+
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
->>>>>>> 009e1075893fd8e08b754a29550a8f2261be7434
+
                         </ul>
                     </li>
                 </ul>

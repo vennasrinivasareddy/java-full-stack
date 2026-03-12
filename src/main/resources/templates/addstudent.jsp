@@ -103,7 +103,7 @@
     <div class="container">
         <h1>Student List</h1>
         <table>
-<<<<<<< HEAD
+
     <tr>
         <th>ID</th>
         <th>Photo</th>
@@ -187,46 +187,6 @@ function previewImage(event) {
     reader.readAsDataURL(event.target.files[0]);
 }
 </script>
-=======
-            <tr>
-                <th>ID</th>
-                <th>Full Name</th>
-                <th>Date of Birth</th>
-                <th>Mobile Number</th>
-                <th>Email</th>
-            </tr>
-            <tr th:each="student : ${students}">
-                <td th:text="${student.id}">ID</td>
-                <td th:text="${student.fullName}">Full Name</td>
-                <td th:text="${student.dob}">Date of Birth</td>
-                <td th:text="${student.mbn}">Mobile Number</td>
-                <td th:text="${student.email}">Email</td>
-            </tr>
-        </table>
-    </div>
 
-    <div class="container">
-        <h2>Add Student</h2>
-        <form action="/studentdata" method="post">
-            <div>
-                <label for="fullName">Full Name:</label>
-                <input type="text" id="fullName" name="fullName" required>
-            </div>
-            <div>
-                <label for="dob">Date of Birth:</label>
-                <input type="text" id="dob" name="dob" required>
-            </div>
-            <div>
-                <label for="mbn">Mobile Number:</label>
-                <input type="number" id="mbn" name="mbn" required>
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email" required>
-            </div>
-            <button type="submit">Add Student</button>
-        </form>
-    </div>
->>>>>>> 009e1075893fd8e08b754a29550a8f2261be7434
 </body>
 </html>

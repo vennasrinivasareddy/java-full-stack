@@ -82,10 +82,7 @@
     <div class="container">
         <div class="left-column">
             <h2>Login</h2>
-<<<<<<< HEAD
-            
-=======
->>>>>>> 009e1075893fd8e08b754a29550a8f2261be7434
+
             <form action="/SCMS" method="post">
                 <input type="text" name="username" placeholder="Username" required>
                 <input type="password" name="password" placeholder="Password" required>
