@@ -111,7 +111,7 @@ public class Rest {
             @RequestParam("photo") MultipartFile file,
             Model model) throws IOException {
 
-        String uploadDir = "src/main/resources/static/images/";
+    	String uploadDir = System.getProperty("java.io.tmpdir");
         String fileName = file.getOriginalFilename();
 
         if (!file.isEmpty()) {
@@ -154,7 +154,7 @@ public class Rest {
     private DiaryEntryRepository entryRepository;
 
     @GetMapping("/diary")
-    public String home(Model model) {
+    public String diary(Model model) { 
         Iterable<DiaryEntry> entries = entryRepository.findAll();
         model.addAttribute("entries", entries);
         model.addAttribute("newEntry", new DiaryEntry());
