@@ -33,6 +33,10 @@ public class Rest {
     public  String home() {
    	 return "home";
     }
+    @GetMapping("/")
+    public String index() {
+        return "login";
+    }
     
     @Autowired
     private UserService userService;
